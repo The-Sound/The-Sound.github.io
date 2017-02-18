@@ -1,0 +1,259 @@
+body
+	{
+		overflow: hidden;
+		font-family: "Segoe UI Light";
+		color: #999999;
+		background-image: url(wall.jpg);
+		background-size: 1920px 1080px;
+	}
+
+a
+	{
+		text-decoration: none;
+		color: #999999;
+		line-height: 25px;
+	}
+
+#bgimg
+	{
+		z-index: -10;
+		position: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+#container
+	{
+		width: 100%;
+		display: table;
+	}
+
+span
+	{
+		width: inherit;
+		height: inherit;
+		line-height: 145px;
+		font-size: 30px;
+		color: #999999;
+	}
+	
+#cell
+	{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+.sqr
+	{
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+		margin: 350px 8% 0% 8%;
+		border-radius: 100px;
+		background-color: #121212;
+		font-size: 20px;
+		position: relative;
+	}
+	
+.crcl
+	{
+		border-radius: 1000px;
+		position: relative;
+		z-index: 1;
+		bottom: 300px;
+		right: 155px;
+		width: 450px;
+		height: 450px;
+		/*border: 1px solid black;*/
+	}
+	
+.crcl [class^='linq']
+	{
+		position: absolute;
+		width: 150px;
+		height: 150px;
+		border-radius: 100px;
+		background-color: #121212;
+		visibility: hidden;
+		/*border: solid 1px #00ff00;*/
+	}
+
+
+/*==================Div Arriba a la izquierda==============*/
+	
+.linq1
+	{
+		top: 75px;
+		left: 75px;
+		animation-name: move;
+		animation-duration: 0.5s;
+		animation-play-state: paused;
+	}
+
+@keyframes move1
+		{
+			0%
+				{
+					transform: translate( 0px, 0px );
+					opacity: 0;
+				}
+				
+			100%
+				{
+					transform: translate(-95px, 0px);	
+					opacity: 1;
+				}
+		}	
+	
+.crcl:hover .linq1
+	{
+		animation-name: move1;
+		transition-timing-function: ease-out;
+		visibility: inherit;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+	
+/*==================Div Arriba a la derecha==============*/
+
+.linq2
+	{
+		top: 75px;
+		left: 230px;
+		animation-name: move;
+		animation-duration: 0.5s;
+		animation-play-state: paused;
+	}
+
+@keyframes move2
+		{
+			0%
+				{
+					transform: translate( 0px, 0px );	
+					opacity: 0;
+				}
+				
+			100%
+				{
+					transform: translate( 95px, 0px );	
+					opacity: 1;
+				}
+		}	
+	
+.crcl:hover .linq2
+	{
+		animation-name: move2;
+		transition-timing-function: ease-out;
+		visibility: inherit;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
+/*==================Div Abajo a la izquierda==============*/
+
+.linq3
+	{
+		top: 225px;
+		left: 75px;
+		animation-name: move;
+		animation-duration: 0.5s;
+		animation-play-state: paused;
+	}
+
+@keyframes move3
+		{
+			0%
+				{
+					transform: translate( 0px, 0px );	
+					opacity: 0;
+				}
+				
+			100%
+				{
+					transform: translate( -35px, 75px );	
+					opacity: 1;
+				}
+		}	
+	
+.crcl:hover .linq3
+	{
+		animation-name: move3;
+		transition-timing-function: ease-out;
+		visibility: inherit;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
+/*==================Div Abajo a la derecha==============*/	
+	
+.linq4
+	{
+		top: 225px;
+		left: 230px;
+		animation-name: move;
+		animation-duration: 0.5s;
+		animation-play-state: paused;
+	}
+
+@keyframes move4
+		{
+			0%
+				{
+					transform: translate( 0px, 0px );	
+					opacity: 0;
+				}
+				
+			100%
+				{
+					transform: translate( 35px, 75px );	
+					opacity: 1;
+				}
+		}	
+	
+.crcl:hover .linq4
+	{
+		animation-name: move4;
+		transition-timing-function: ease-out;
+		visibility: inherit;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+	
+/*==================Div Entre los 2 de arriba, usar linq5==============*/
+
+	
+.linq5
+	{
+		top: 75px;
+		left: 155px;
+		animation-name: move;
+		animation-duration: 0.5s;
+		animation-play-state: paused;
+	}
+
+@keyframes move5
+		{
+			0%
+				{
+					transform: translate( 0px, 0px );	
+					opacity: 0;
+				}
+				
+			100%
+				{
+					transform: translate( 0px, -115px );	
+					opacity: 1;
+				}
+		}	
+		
+.crcl:hover .linq5
+	{
+		animation-name: move5 	;
+		transition-timing-function: ease-out;
+		visibility: inherit;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+
+/*==================Div Entre los 2 de abajo, usar linq6==============*/
