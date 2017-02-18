@@ -1,0 +1,251 @@
+@media (orientation: portrait)
+	{
+		body { background-image: url(wall-p.png); }
+			
+		#paiaso { background-image: url(wall-p.png); }
+			
+		.image, .square
+			{
+				width: 400px;
+				height: 600px;
+				transition: all 0.5s;
+			}
+			
+		.square
+			{
+				position: absolute;
+				background-size: 400px 600px;
+			}
+			
+		#fourchan, #daily, #forum, #tracker { transition: all 0.5s; }
+		
+		#fourchan
+			{
+				top: 100px;
+				left: 105px;
+				background-image: url(rect-p-1.jpg);
+			}
+			
+		#daily
+			{
+				top: 100px;
+				left: 514px;
+				background-image: url(rect-p-2.jpg);
+			}
+			
+		#forum
+			{
+				top: 709px;
+				left: 105px;
+				background-image: url(rect-p-3.jpg);
+			}
+			
+		#tracker
+			{
+				top: 709px;
+				left: 514px;
+				background-image: url(rect-p-4.jpg);
+			}	
+			
+		.textu {margin-top: 65%; }
+		
+		.insidediv { margin-top: 10%; }
+		
+		.test { top: 25%; }
+		
+		.square:hover .textu
+			{
+				height: 15%;
+				margin-top: 50%;
+			}
+		
+	}
+	
+@media (orientation: landscape)
+	{
+		body { background-image: url(wall-l.jpg); }
+			
+		#paiaso { background-image: url(wall-l.jpg); }
+			
+		.image, .square
+			{
+				width: 650px;
+				height: 350px;
+				transition: all 0.5s;
+			}
+			
+			
+		.square
+			{
+				position: absolute;
+				background-size: 650px 350px;
+			}
+			
+		#fourchan, #daily, #forum, #tracker { transition: all 0.5s; }
+		
+		#fourchan
+			{
+				top: 130px;
+				left: 295px;
+				background-image: url(rect-l-1.jpg);
+			}
+			
+		#daily
+			{
+				top: 130px;
+				left: 955px;
+				background-image: url(rect-l-2.png);
+			}
+			
+		#forum
+			{
+				top: 490px;
+				left: 295px;
+				background-image: url(rect-l-3.jpg);
+			}
+			
+		#tracker
+			{
+				top: 490px;
+				left: 955px;
+				background-image: url(rect-l-4.jpg);
+			}
+		
+		.textu { margin-top: 30%; }
+
+		.insidediv { margin-top: 5%; }
+		
+		.test { top: 25%; }
+
+		#rowleft-3
+			{
+				float: left;
+				width: 32%;
+			}
+			
+		#rowcenter-3
+			{
+				display: inline;
+				width: 32%;
+				float: left;
+				margin-left: 1.75%;
+			}
+			
+		#rowright-3
+			{
+				float: right;
+				width: 32%;
+			}
+		
+		#rowleft { float: left; }
+		
+		#rowright { float: right; }
+		
+		#rowleft,
+		#rowright
+			{ width: 45%; }
+		
+			
+		.square:hover .textu { margin-top: 21.5%; }
+		
+		.square:hover .textu { height: 25%; }
+	}
+	
+/*===================General structure==================*/
+
+/*@font-face { font-family: "Oswald"; src: url("Font/Oswald-ExtraLight.ttf"); }*/
+
+body, a
+	{
+		font-family: "Segoe UI";
+		color: #ffffff;
+		text-decoration: none;
+		overflow: hidden;
+	}
+	
+a
+	{
+		font-size: 24px;
+		font-weight: 100;
+		transition: all 0.3s;
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+#container
+	{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+#paiaso
+	{
+		content: " ";
+		z-index: -1;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		transition: all 1s;
+	}
+
+.textu
+	{
+		background-color: rgba( 0, 0, 0, 0.8);
+		opacity: 0;
+		width: 5%;
+		height: 1%;
+		text-align: center;
+		/*filter: blur(5px);*/
+		transition: width 0.2s, opacity 0.3s, height 0.3s 0.4s, padding-top 0.3s 0.4s, margin-top 0.3s 0.4s, background-color 0.4s 0.4s;
+	}
+	
+.textu [id^=row]
+	{
+		margin-top: 5%;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.4s 0.4s;
+	}
+
+.insidediv { height: 0%; opacity: 0; visibility: hidden; transition: all 0.3s;	}
+
+.test
+	{
+		opacity: 0;
+		transition: all 0.4s 0.4s;
+		position: relative;
+		font-size: 32px;
+		font-weight: 100;
+	}
+
+.square:hover .textu
+	{
+		opacity: 1;
+		width: 100%;
+	}	
+
+.square:hover .test { opacity: 1; }
+
+.textu:hover
+	{
+		background-color: rgba( 0, 0, 0, 0.65);
+		height: 80%;
+	}
+
+.textu:hover [id^=row] { opacity: 1; visibility: visible; }
+
+.textu:hover .insidediv { opacity: 1; visibility: visible; }
+
+.textu:hover a { opacity: 1; visibility: visible; }
+
+a:hover
+	{
+		font-size: 24px;
+		text-shadow: 2px 2px #999;
+		margin-top: -1.1%;
+	}

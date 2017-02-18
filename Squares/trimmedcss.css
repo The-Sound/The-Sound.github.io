@@ -1,0 +1,274 @@
+body
+	{
+		overflow: hidden;
+		font-family: "Segoe UI Light";
+		color: #6F6E67;
+		background-image: url(wall.jpg);
+		background-size: 1920px 1080px;
+	}
+
+a
+	{
+		text-decoration: none;
+		color: #6F6E67;
+		line-height: 20px;
+	}
+	
+[class^='linq'] > a
+	{
+		position: relative;
+		top: 27.5px;
+		vertical-align: middle;
+	}
+
+#bgimg
+	{
+		z-index: -10;
+		position: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+#container
+	{
+		width: 100%;
+		display: table;
+	}
+
+span
+	{
+		width: inherit;
+		height: inherit;
+		line-height: 145px;
+		font-size: 30px;
+		color: #6F6E67;
+	}
+	
+#cell
+	{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+.sqr
+	{
+		position: relative;
+		width: 150px;
+		height: 150px;
+		/*width: 300px;
+		height: 300px;
+		top: -75px;*/
+		margin: 350px 1% 0% 1%;
+		background-color: #3c323d;
+		display: inline-block;
+		font-size: 16px;
+	}
+
+/*===============Todos los Linq==============*/	
+
+[class^='linq']:hover
+	{
+		background-color: #efecdd !important;
+	}
+
+[class^='linq']
+	{
+		position: absolute;
+		width: 90px;
+		height: 90px;
+		background-color: #3c323d;
+		visibility: hidden;
+		/*border: solid 1px #000000;*/
+		
+		
+		animation-name: ;
+		animation-duration: 0.5s;
+		animation-play-state: paused;
+	}
+
+@keyframes enter
+		{
+			0%
+				{
+					opacity: 0;
+					visibility: hidden;
+					background-color: #3c323d;
+				}
+				
+			50%
+				{
+					background-color: #efecdd;
+				}
+				
+			100%
+				{
+					opacity: 1;
+					visibility: inherit;
+					background-color: #3c323d;
+				}
+		}	
+	
+.sqr:hover [class^='linq']
+	{
+		animation-name: enter;
+		transition-timing-function: ease-out;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+	
+/*==================Text==============*/
+
+
+span
+	{
+		animation-name: bye;
+		animation-duration: 0.5s;
+		animation-play-state: paused;
+	}
+	
+		
+@keyframes bye1
+		{
+			0%
+				{
+					opacity: 1;
+
+				}
+				
+			100%
+				{
+					opacity: 0;
+				}
+		}	
+	
+.sqr:hover span
+	{
+		animation-name: bye1;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}		
+	
+/*==================Div inicial==============*/
+
+.sqr
+	{
+		animation-name: open;
+		animation-duration: 1s;
+		animation-play-state: paused;
+	}
+	
+		
+@keyframes open1
+		{
+			0%
+				{
+					margin: 350px 1% 0% 1%;
+					transform: translate(0px, 0px);
+					width: 150px;
+					height: 150px;
+
+				}
+				
+			100%
+				{
+					margin: 350px 5% 0% 5%;
+					transform: translate( 0px, -25px );
+					width: 300px;
+					height: 200px;
+				}
+		}	
+	
+.sqr:hover
+	{
+		animation-name: open1;
+		transition-timing-function: ease-out;
+		animation-play-state: running;
+		animation-fill-mode: forwards;
+	}
+	
+/*==================Div Arriba a la izquierda==============*/
+	
+.linq1
+	{
+		top: 5px;
+		left: 5px;
+		animation-delay: 1s;
+	}
+	
+/*==================Div Arriba Centro==============*/
+
+.linq2
+	{
+		top: 5px;
+		left: 104px;
+		animation-delay: 1.1s;
+	}
+
+/*==================Div Arriba Derecha==============*/
+
+.linq3
+	{
+		top: 5px;
+		left: 203px;
+		animation-delay: 1.2s;
+	}
+
+/*==================Div Centro Izquierda==============*/	
+	
+.linq4
+	{
+		top: 104px;
+		left: 5px;
+		animation-delay: 1.3s;
+	}
+	
+/*==================Div Centro Centro==============*/
+
+	
+.linq5
+	{
+		top: 104px;
+		left: 104px;
+		animation-delay: 1.4s;
+	}
+
+/*==================Div Centro Derecha==============*/
+
+	
+.linq6
+	{
+		top: 104px;
+		left: 203px;
+		animation-delay: 1.5s;
+	}
+	
+/*==================Div Abajo Izquierda==============*/
+
+	
+.linq7
+	{
+		top: 203px;
+		left: 5px;
+		animation-delay: 1.6s;
+	}
+	
+/*==================Div Abajo Centro==============*/
+
+	
+.linq8
+	{
+		top: 203px;
+		left: 104px;
+		animation-delay: 1.7s;
+	}
+	
+/*==================Div Abajo Derecha==============*/
+
+	
+.linq9
+	{
+		top: 203px;
+		left: 203px;
+		animation-delay: 1.8s;
+	}
