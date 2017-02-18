@@ -1,1 +1,1 @@
-# Gomuboy.github.io
+#Whatever
