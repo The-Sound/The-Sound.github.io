@@ -28,8 +28,10 @@
 			
 		#daily
 			{
-				top: 100px;
-				left: 514px;
+				/*top: 100px;
+				left: 514px;*/
+				top:10%;
+				left:10%;
 				background-image: url(rect-p-2.jpg);
 			}
 			
@@ -69,8 +71,10 @@
 			
 		.image, .square
 			{
-				width: 650px;
-				height: 350px;
+				/*width: 650px;
+				height: 350px;*/
+				width: 33.85%;
+				height: 36.1%;
 				transition: all 0.5s;
 			}
 			
@@ -78,36 +82,49 @@
 		.square
 			{
 				position: absolute;
-				background-size: 650px 350px;
+				/*background-size: 650px 350px;*/
+				background-size: 100% 100%;
 			}
 			
 		#fourchan, #daily, #forum, #tracker { transition: all 0.5s; }
 		
 		#fourchan
 			{
-				top: 130px;
-				left: 295px;
+				/*top: 130px;
+				left: 295px;*/
+				top: 13.45%;
+				left: 15.35%;
 				background-image: url(rect-l-1.jpg);
 			}
 			
 		#daily
 			{
-				top: 130px;
-				left: 955px;
+				/*top: 130px;
+				left: 955px;*/
+				top: 13.45%;
+				left: 49.2%;
+				margin-left: 0.55%;
 				background-image: url(rect-l-2.png);
 			}
 			
 		#forum
 			{
-				top: 490px;
-				left: 295px;
+				/*top: 490px;
+				left: 295px;*/
+				top: 49.5%;
+				left: 15.35%;
+				margin-top: 0.55%;
 				background-image: url(rect-l-3.jpg);
 			}
 			
 		#tracker
 			{
-				top: 490px;
-				left: 955px;
+				/*top: 490px;
+				left: 955px;*/
+				top: 49.5%;
+				left: 49.2%;
+				margin-top: 0.55%;
+				margin-left: 0.55%;
 				background-image: url(rect-l-4.jpg);
 			}
 		
@@ -165,7 +182,7 @@ body, a
 	
 a
 	{
-		font-size: 24px;
+		font-size: 1.5em;
 		font-weight: 100;
 		transition: all 0.3s;
 		visibility: hidden;
@@ -245,7 +262,7 @@ a
 
 a:hover
 	{
-		font-size: 24px;
+		font-size: 1.8em;
 		text-shadow: 2px 2px #999;
 		margin-top: -1.1%;
 	}
