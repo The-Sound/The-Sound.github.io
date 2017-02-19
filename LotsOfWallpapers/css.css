@@ -28,10 +28,10 @@
 			
 		#daily
 			{
-				/*top: 100px;
-				left: 514px;*/
-				top:10%;
-				left:10%;
+				/*top:10%;
+				left:10%;*/
+				top: 100px;
+				left: 514px;
 				background-image: url(rect-p-2.jpg);
 			}
 			
