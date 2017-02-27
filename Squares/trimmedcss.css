@@ -1,7 +1,8 @@
 body
 	{
 		overflow: hidden;
-		font-family: "Segoe UI Light";
+		font-family: "Segoe UI";
+		font-weight: "Light";
 		color: #6F6E67;
 		background-image: url(wall.jpg);
 		background-size: 1920px 1080px;
@@ -80,10 +81,12 @@ span
 		background-color: #3c323d;
 		visibility: hidden;
 		/*border: solid 1px #000000;*/
+		transition: opacity 1s;
+		opacity: 0
 		
 		
 		animation-name: ;
-		animation-duration: 0.5s;
+		animation-duration: 0.25s;
 		animation-play-state: paused;
 	}
 
@@ -122,69 +125,33 @@ span
 
 span
 	{
-		animation-name: bye;
-		animation-duration: 0.5s;
-		animation-play-state: paused;
+		opacity:1;
+		transition: opacity 0.25s;
 	}
 	
-		
-@keyframes bye1
-		{
-			0%
-				{
-					opacity: 1;
-
-				}
-				
-			100%
-				{
-					opacity: 0;
-				}
-		}	
 	
 .sqr:hover span
 	{
-		animation-name: bye1;
-		animation-play-state: running;
-		animation-fill-mode: forwards;
+		opacity: 0;
 	}		
 	
 /*==================Div inicial==============*/
 
 .sqr
 	{
-		animation-name: open;
-		animation-duration: 1s;
-		animation-play-state: paused;
+		margin: 350px 1% 0% 1%;
+		transform: translate(0px, 0px);
+		width: 150px;
+		height: 150px;
+		transition: all 0.5s;
 	}
-	
-		
-@keyframes open1
-		{
-			0%
-				{
-					margin: 350px 1% 0% 1%;
-					transform: translate(0px, 0px);
-					width: 150px;
-					height: 150px;
-
-				}
-				
-			100%
-				{
-					margin: 350px 5% 0% 5%;
-					transform: translate( 0px, -25px );
-					width: 300px;
-					height: 200px;
-				}
-		}	
 	
 .sqr:hover
 	{
-		animation-name: open1;
-		transition-timing-function: ease-out;
-		animation-play-state: running;
-		animation-fill-mode: forwards;
+		margin: 350px 5% 0% 5%;
+		transform: translate( 0px, -25px );
+		width: 300px;
+		height: 200px;
 	}
 	
 /*==================Div Arriba a la izquierda==============*/
@@ -193,7 +160,7 @@ span
 	{
 		top: 5px;
 		left: 5px;
-		animation-delay: 1s;
+		animation-delay: 0.5s;
 	}
 	
 /*==================Div Arriba Centro==============*/
@@ -202,7 +169,7 @@ span
 	{
 		top: 5px;
 		left: 104px;
-		animation-delay: 1.1s;
+		animation-delay: 0.6s;
 	}
 
 /*==================Div Arriba Derecha==============*/
@@ -211,7 +178,7 @@ span
 	{
 		top: 5px;
 		left: 203px;
-		animation-delay: 1.2s;
+		animation-delay: 0.7s;
 	}
 
 /*==================Div Centro Izquierda==============*/	
@@ -220,7 +187,7 @@ span
 	{
 		top: 104px;
 		left: 5px;
-		animation-delay: 1.3s;
+		animation-delay: 0.8s;
 	}
 	
 /*==================Div Centro Centro==============*/
@@ -230,7 +197,7 @@ span
 	{
 		top: 104px;
 		left: 104px;
-		animation-delay: 1.4s;
+		animation-delay: 0.9s;
 	}
 
 /*==================Div Centro Derecha==============*/
@@ -240,7 +207,7 @@ span
 	{
 		top: 104px;
 		left: 203px;
-		animation-delay: 1.5s;
+		animation-delay: 1s;
 	}
 	
 /*==================Div Abajo Izquierda==============*/
@@ -250,7 +217,7 @@ span
 	{
 		top: 203px;
 		left: 5px;
-		animation-delay: 1.6s;
+		animation-delay: 1.1s;
 	}
 	
 /*==================Div Abajo Centro==============*/
@@ -260,7 +227,7 @@ span
 	{
 		top: 203px;
 		left: 104px;
-		animation-delay: 1.7s;
+		animation-delay: 1.2s;
 	}
 	
 /*==================Div Abajo Derecha==============*/
@@ -270,5 +237,5 @@ span
 	{
 		top: 203px;
 		left: 203px;
-		animation-delay: 1.8s;
+		animation-delay: 1.3s;
 	}
