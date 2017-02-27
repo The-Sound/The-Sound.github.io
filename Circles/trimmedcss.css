@@ -1,11 +1,76 @@
+@media (orientation: landscape)
+	{
+		body
+			{
+				background-image: url(wall-l.jpg);
+				background-size: 100%;
+			}
+			
+		.sqr
+			{
+				display: inline-block;
+				width: 150px;
+				height: 150px;
+				margin: 18.4% 8% 0% 8%;
+				border-radius: 100px;
+				background-color: #121212;
+				font-size: 20px;
+				position: relative;
+			}
+			
+		.crcl
+			{
+				border-radius: 1000px;
+				position: relative;
+				z-index: 1;
+				bottom: 300px;
+				right: 155px;
+				width: 455px;
+				height: 455px;
+				/*border: 1px solid black;*/
+			}	
+	}
+	
+@media (orientation: portrait)
+	{
+		body
+			{
+				background-image: url(wall-p.png);
+				background-size: 100%;
+			}
+			
+		.sqr
+			{
+				display: inline-block;
+				width: 150px;
+				height: 150px;
+				margin: 40% 40% 0% 40%;
+				border-radius: 100px;
+				background-color: #121212;
+				font-size: 20px;
+				position: relative;
+			}
+			
+		.crcl
+			{
+				border-radius: 1000px;
+				position: relative;
+				z-index: 1;
+				bottom: 300px;
+				right: 155px;
+				width: 455px;
+				height: 455px;
+				/*border: 1px solid black;*/
+			}	
+	}
+	
+	
 body
 	{
 		overflow: hidden;
 		font-family: "Segoe UI";
 		font-weight: "Light";
 		color: #999999;
-		background-image: url(wall.jpg);
-		background-size: 1920px 1080px;
 	}
 
 a
@@ -44,30 +109,8 @@ span
 		vertical-align: middle;
 		text-align: center;
 	}
-
-.sqr
-	{
-		display: inline-block;
-		width: 150px;
-		height: 150px;
-		margin: 350px 8% 0% 8%;
-		border-radius: 100px;
-		background-color: #121212;
-		font-size: 20px;
-		position: relative;
-	}
 	
-.crcl
-	{
-		border-radius: 1000px;
-		position: relative;
-		z-index: 1;
-		bottom: 300px;
-		right: 155px;
-		width: 455px;
-		height: 455px;
-		/*rder: 1px solid black;*/
-	}
+
 	
 .crcl [class^='linq']
 	{
