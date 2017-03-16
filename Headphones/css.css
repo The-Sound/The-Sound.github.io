@@ -11,15 +11,7 @@ body
 		text-align: center;
 	}	
 
-a:hover
-	{
-		text-shadow: 1px 1px 5px #cccccc;
-	}
-
-.container
-	{
-		margin-top: 15%;
-	}
+.container { margin-top: 23%; }
 
 .square
 	{
@@ -28,32 +20,34 @@ a:hover
 		margin-left: 10%;
 		margin-top: 5%;
 		padding-top: 0.25%;
-		/*border: 1px solid red;*/
-		/*background-color: #242526;*/
-		transition: all 0.5s;
+		/*border: 1px solid red;
+		background-color: #242526;*/
 	}
-
 
 .titulo
 	{
-		transition: all 0.5s;
-		position:   absolute;
+		position: absolute;
 		width: 34.75%;
+		transition: all 0.1s 0.4s;
 	}
 	
 .linq
 	{
 		display: inline-block;
+		opacity: 0;
 		margin: 0% 1% ;
 		height: 30px;
-		opacity: 0;
-		transition: all 0.5s;
 	}
+
+.container,
+.square,
+.linq,
+a { transition: all 0.5s; }
 
 .square:hover
   {
 		background-color: rgba( 36, 37, 38, 1 );
-		box-shadow: -10px 0px 10px rgba( 204, 204, 204, 0.3 );		
+		box-shadow: 0px 0px 10px 3px rgba( 204, 204, 204, 0.3 );		
   }
 
 .square:hover .titulo
@@ -62,7 +56,6 @@ a:hover
 		opacity: 0;
   }
 
-.square:hover .linq
-  {
-		opacity: 1;
-  }
+.square:hover .linq { opacity: 1; }
+
+ a:hover { text-shadow: 1px 1px 5px #cccccc; }
