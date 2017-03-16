@@ -19,8 +19,9 @@ a
 		width: 90vw;
 		height: 100vh;
 		/*background-color: #121212;*/
-		background: url('space24.jpg');
+		background: url('bg.jpg');
 		background-position: fixed;
+		background-size: 100%;
 		overflow-y: scroll;
 		float: right;
 	}
@@ -29,6 +30,8 @@ a
 	{
 		display: inline-flex;
 		position: fixed;
+		align-content: center;
+		text-align: center;
 		width: 10vw;
 		height: 100vh;
 		background-color: #242526;
@@ -43,13 +46,6 @@ a
 		/*border: 1px solid green;*/
 	}
 
-/*span
-	{
-		width: 100%;
-		margin-bottom: 1%;
-		display: block;
-	}*/
-
 #central > div
 	{
 		justify-content: center;
@@ -58,8 +54,35 @@ a
 		/*border: 1px solid blue;*/
 	}
 
-img
+a > img
 	{
 		width: 40vw;
 		height: 40vh;
+	}
+
+
+#sidebar div
+	{
+		width: 90%;
+		margin-left: 4.5%;
+	}
+
+#sidebar img
+	{
+		border-radius: 100px;
+		width: 100%;
+		height: 18%;
+		margin-top: 1vh;
+	}
+
+.title
+	{
+		font-size: 2em;
+		font-weight: lighter;
+		margin-left: 0.8vw;
+	}
+
+.bio
+	{
+		margin-top: 0.5vw;
 	}
