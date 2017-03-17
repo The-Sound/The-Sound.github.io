@@ -16,50 +16,24 @@ a
 	{
 		display: inline-flex;
 		justify-content: center;
-		width: 90vw;
-		height: 100vh;
-		/*background-color: #121212;*/
-		background: url('bg.jpg');
 		background-position: fixed;
-		background-size: 100%;
 		overflow-y: scroll;
 		float: right;
 	}
 
 #sidebar
 	{
-		display: inline-flex;
 		position: fixed;
 		align-content: center;
 		text-align: center;
-		width: 10vw;
-		height: 100vh;
-		background-color: #242526;
-		/*border: 1px solid red;*/
 	}
 
-#central
+#sidebar img
 	{
-		width: 90%;
-		height: 100%;
-		margin-top: 5vh;
-		/*border: 1px solid green;*/
+		border-radius: 100px;
+		width: 100%;
+		margin-top: 1vh;
 	}
-
-#central > div
-	{
-		justify-content: center;
-		text-align: center;
-		height: 50%;
-		/*border: 1px solid blue;*/
-	}
-
-a > img
-	{
-		width: 40vw;
-		height: 40vh;
-	}
-
 
 #sidebar div
 	{
@@ -67,22 +41,96 @@ a > img
 		margin-left: 4.5%;
 	}
 
-#sidebar img
+#central > div
 	{
-		border-radius: 100px;
-		width: 100%;
-		height: 18%;
-		margin-top: 1vh;
+		justify-content: center;
+		text-align: center;		
 	}
 
-.title
+.title { font-weight: lighter; }
+
+
+@media (orientation: portrait)
 	{
-		font-size: 2em;
-		font-weight: lighter;
-		margin-left: 0.8vw;
+
+		.container
+			{
+				width: 85vw;
+				height: 100vh;
+				background: url('bg-p.jpg');
+				background-size: 100vw 90vh;
+			}
+
+		#sidebar
+			{
+				display: inline-flex;
+				width: 15vw;
+				height: 100vh;
+				background-color: #141E22;
+			}
+
+		#central
+			{
+				width: 100%;
+				height: 100%;
+				margin-top: 5vh;
+			}
+		
+		#central > div { height: 25%; }
+
+		a > img { width: 60vw; }
+
+		#sidebar img { height: 7%; }
+
+		.title
+			{
+				font-size: 1.8em;
+				margin-left: 0.8vw;
+			}
+
+		.bio { margin-top: 1vw; }
 	}
 
-.bio
+@media (orientation: landscape)
 	{
-		margin-top: 0.5vw;
+		.container
+			{
+				width: 90vw;
+				height: 100vh;
+				background: url('bg-l.jpg');
+				background-size: 100%;
+			}
+
+		#sidebar
+			{
+				display: inline-flex;
+				width: 10vw;
+				height: 100vh;
+				background-color: #292C2C;
+			}
+
+		#central
+			{
+				width: 90%;
+				height: 100%;
+				margin-top: 5vh;
+			}
+
+		#central > div { height: 50%; }
+
+		a > img
+			{
+				width: 40vw;
+				height: 40vh;
+			}
+
+		#sidebar img { height: 18%; }
+
+		.title
+			{
+				font-size: 2em;
+				margin-left: 0.8vw;
+			}
+
+		.bio { margin-top: 0.5vw; }
 	}
