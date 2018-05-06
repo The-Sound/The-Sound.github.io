@@ -124,6 +124,14 @@ a
 				height: 40vh;
 			}
 
+		.screenp
+			{
+				height: 150% !important;
+				width: 25% !important;
+			}
+
+
+			
 		#sidebar img { height: 18%; }
 
 		.title
